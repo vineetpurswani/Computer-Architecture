@@ -1,0 +1,47 @@
+===============================================
+HW2 analysis results- 
+===============================================
+PART A Results: 
+===============================================
+Count 130094723
+corrCount_static 76177390
+	fraction of misprediction: 0.414447
+	fraction of forward misprediction: 0.377774
+	fraction of backward misprediction: 0.561804
+corrCount_bimodal 117826423
+	fraction of misprediction: 0.0943028
+	fraction of forward misprediction: 0.0978236
+	fraction of backward misprediction: 0.0801554
+corrCount_SAg 125376422
+	fraction of misprediction: 0.0362682
+	fraction of forward misprediction: 0.0369852
+	fraction of backward misprediction: 0.0333871
+corrCount_GAg 114855764
+	fraction of misprediction: 0.117137
+	fraction of forward misprediction: 0.12379
+	fraction of backward misprediction: 0.0904059
+corrCount_gshare 117122883
+	fraction of misprediction: 0.0997107
+	fraction of forward misprediction: 0.100426
+	fraction of backward misprediction: 0.0968357
+corrCount_hybrid2 124994486
+	fraction of misprediction: 0.039204
+	fraction of forward misprediction: 0.039995
+	fraction of backward misprediction: 0.0360258
+corrCount_hybrid31 123666042
+	fraction of misprediction: 0.0494154
+	fraction of forward misprediction: 0.0499549
+	fraction of backward misprediction: 0.0472475
+corrCount_hybrid32 122690315
+	fraction of misprediction: 0.0569155
+	fraction of forward misprediction: 0.0576355
+	fraction of backward misprediction: 0.0540223
+===============================================
+PART B Results: 
+===============================================
+Total Count: 2798041
+	Miss Count percentage BTB 1: 0.44847
+	Misprediction Count percentage BTB 1: 0.448464
+	Miss Count percentage BTB 2: 0.304928
+	Misprediction Count percentage BTB 2: 0.217049
+===============================================

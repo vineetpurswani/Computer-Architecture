@@ -1,0 +1,194 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>The CACHESKEW  simulator </TITLE>
+</HEAD>
+<BODY bgcolor="#d0d0f0">
+<CENTER>
+<A HREF="http://www.inria.fr/welcome.html">
+	<IMG SRC="http://www.irisa.fr/caps/GIF/MENUBAR/inria.gif"></A>
+<A HREF="http://www.irisa.fr/EXTERNE/Menu_externe_francais.html">
+	<IMG SRC="http://www.irisa.fr/caps/GIF/MENUBAR/irisa.gif"></A>
+<A HREF="http://www.inria.fr/index-fra.html">
+	<IMG SRC="http://www.irisa.fr/caps/GIF/MENUBAR/indexgen.gif"></A>
+<A HREF="http://www.inria.fr/Unites/Rennes-fra.html">
+	<IMG SRC="http://www.irisa.fr/caps/GIF/MENUBAR/Unite-Rennes.gif"></A>
+<A HREF="http://www.inria.fr/Unites/RENNES_projects-fra.html">
+	<IMG SRC="http://www.irisa.fr/caps/GIF/MENUBAR/activites_de_recherche.gif"></A>
+<A HREF="http://www.inria.fr/Programmes/Programme1-fra.html">
+	<IMG SRC="http://www.irisa.fr/caps/GIF/MENUBAR/programme.gif"></A>
+<A HREF="HTML/Desole.html">
+	<IMG SRC="http://www.irisa.fr/caps/GIF/MENUBAR/francais.gif"></A>
+<A HREF="http://www.inria.fr/cgi-bin/aide-projet-fra?Rennes,Programme1,CAPS">
+	<IMG SRC="http://www.irisa.fr/caps/GIF/MENUBAR/aide.gif"></A>
+</CENTER>
+
+<!--Title of page/project-->
+<H1 ALIGN=CENTER>The CACHESKEW simulator</H1>
+<H3 ALIGN=CENTER> Authors: André Seznec, Jérome Hédouin</H3>
+<H3 ALIGN=CENTER>Contact:<A HREF="mailto:seznec@irisa.fr"> Andr&eacute; Seznec</A></H3>
+<HR WIDTH=50% ALIGN=center>
+<P>
+<CENTER><em>
+Last Modification: Sept.  97 <BR>
+</em></CENTER>
+<P>
+
+
+
+<P>
+<P>
+<P>
+<DL COMPACT>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>
+<DD> <A HREF="http://www.irisa.fr/caps/PROJECTS/Architecture/CACHESKEW.html#SECTION02">Objectives</A>
+
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>
+<DD> <A HREF="http://www.irisa.fr/caps/PROJECTS/Architecture/CACHESKEW.html#SECTION01">A brief introduction to skewed-associativity</A>
+
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>
+<DD> <A HREF="http://www.irisa.fr/caps/PROJECTS/Architecture/CACHESKEW.html#SECTION03">General organization of the simulator</A>
+
+
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>
+<DD><A HREF="http://www.irisa.fr/caps/PROJECTS/Architecture/CACHESKEW.html#SECTION04">How to test new replacement policies</A>
+
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>
+<DD><A HREF="http://www.irisa.fr/caps/PROJECTS/Architecture/CACHESKEW.html#SECTION05">How to test new mapping functions</A>
+
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>
+<DD><A HREF="ftp://ftp.irisa.fr:/local/caps/CACHESKEW.tar"> The simulator package</A> (as a tar file)
+
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>
+<DD><A HREF="http://www.irisa.fr/caps/PROJECTS/Architecture/Welcome.html">Back to processor architecture research in CAPS team</A>
+</DL>
+
+<H1><A NAME="SECTION02"> Objectives  </A></H1>
+<P>
+The CACHESKEW simulator is provided as is  in order to serve as a basis to develop cache simulators for testing ideas related to skewed-associative caches.
+This package has been built in order to be easily modified for being able to test new indexing functions or new replacement policies.
+
+<P>
+<H1> <A NAME="SECTION01">A brief  introduction to skewed-associativity</A></H1>
+
+<P>
+The skewed associative cache is a new organization for multi-bank caches.  Skewed-associative caches have been shown to have two major advantages over conventional set-associative caches.<BR>
+
+First, at equal associativity degrees, a skewed-associative cache typically exhibits the same hardware complexity as a set-associative cache, but exhibits lower miss ratio.
+This is particularly significant for BTBs and L2 caches for which a significant ratio of conflict misses occurs even on 2-way set-associative caches.<BR>
+
+Second, the behavior of skewed-associative caches is quite insensitive to the precise data placement in memory.
+
+
+<P>
+Related publications:
+<P>
+[1] A. Seznec, ``<A HREF="ftp://ftp.irisa.fr:/local/caps/SKEWED.ps.gz">A case for two-way skewed-associative cache</A>'',
+Proceedings of the 20th International Symposium on Computer Architecture(IEEE-ACM), San Diego, may 1993
+<P>
+[2] A. Seznec, F. Bodin, ``Skewed-associative caches'',
+Proceedings of PARLE' 93, Munich, June 1993
+<P>
+[3] A. Seznec, ``About set and skewed associativity on second
+level caches'', Proceedings of the International Conference on Computer Design,
+Boston, October 1993
+<P>
+[4] F. Bodin, A. Seznec, &quot;<A HREF="ftp://ftp.irisa.fr:/local/caps/IEEETCskew.ps.gz">Skewed-associativity improves performance and enhances  predictability</A>&quot;,
+IEEE Transactions on Computers, May 1997
+(A short version appears in Proceedings of the 22th International Symposium  on Computer Architecture
+(IEEE-ACM), Santa-Margharita, June 1995)
+<P>
+[5] N. Drach, A. Gefflaut, P. Joubert,  A. Seznec, ``<A HREF="ftp://ftp.irisa.fr:/techreports/1993/PI-760.ps.gz">About cache
+associativity in low-cost shared memory multi-microprocessors</A>'',  Parallel Processing Letters, Sept. 1995
+(also IRISA Report No 760)
+<P>
+[6] A. Seznec ``<A  HREF="ftp://ftp.irisa.fr:/techreports/1997/PI-1114.ps.gz">
+A New Case for Skewed-Associativity</A>``, 22 pages, IRISA Report No 1114, July 1997
+<P>
+
+<H1><A NAME="SECTION03"> General organization of the simulator </A></H1>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>The simulator is made to compare different replacement policies for a cache of a given size. This size is given as a parameter. The replacement policies are defined in the simulator and each of them is applied to a cache of equal size.  Three differents sets of skewing functions are defined in the simulator and one of the parameters is used to decide which functions will be used during the simulation.
+<p> Two simulators CACHESKEW  and CACHESKEWL2 are provided. CACHESKEW (rep. CACHESKEWL2) targets L1 (resp L2) caches. 
+In the current version of CACHESKEWL2, a direct-mapped split L1 cache is simulated. Inclusion property is enforced.
+The L1 cache is 8Kbyte and has 16bytes cache line.
+
+<p>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>Usage: NAME NbMapfct CacheSize LogLine ResFile < SimFile
+<UL>
+<LI>NAME: CACHESKEW or CACHESKEWL2.
+<P><LI>NbMapfct: Number of the mapping function.
+NbMapfct has to match with one of the possible choice given in initcache.c.
+<P><LI>CacheSize: Size in bytes of the cache.
+<P><LI>LogLine: Log base 2 of line size.
+<P><LI>ResFile: Result File.
+<P><LI>SimFile: Simulation File.
+</UL> 
+<P>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>The different files constituing the CACHESKEW simulator are:
+<p>
+<UL>
+<LI>mainess.c: the main file. The simulator currently accepts dinero-like entries. This file has to be adapted to the simulation file format.
+<p>
+<LI>cacheLibrary.h: this library file is included in every other file. It contains most of the definitions.
+<p>
+<LI>initcache.c: this file contains the different functions used for the initialisation of the caches.
+<p>
+<LI>Sim.c: this is the file that simulates each memory access.<BR>
+It access to the cache at the address read in the simulation file and on a miss it allocates a place in the cache with the replacement policy that has has been given during the initialisation.  
+<p>
+<LI>files whose  names begin with mappingfct: each of those files contains the fonctions carrying into effect a skewing function. 
+<p>
+<LI>SetAsso.c and all the files beginning with "Skew" describe the different replacement policies.  
+<p>
+<LI>display.c: the purpose of this file is to create the result file.
+<p></UL>
+
+<H2> Replacement policies   </A></H2>
+
+The replacement policies provided here are described in ``<A
+HREF="ftp://ftp.irisa.fr:/techreports/1997/PI-1114.ps.gz">A New Case for
+Skewed-Associativity</A>``.
+Corresponding files:
+<p>
+<LI>Single-bit replacement  policy --> SkewPseudoLRU.c
+<p>
+<LI>Usefulness policy  --> SkewUseful.c
+<p>
+<LI>Not Recently Used --> SkewNRU.c
+<p>
+<LI>Not Recently Used + Useful --> SkewUNRU.c
+<p>
+<LI>Enhanced Not Recently Used --> SkewENRU.c
+
+<H1><A NAME="SECTION04"> How to test a new replacement policy </A></H1>
+Feel free to test  new replacement policies. Proceed as follows:
+<p>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>create a new file containing the replacement policy. ie the functions of allocation and of test of presence in the cache.
+<p>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>do not forget to add the name of your file in the makefile.
+<p>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>create a new array of caches in the file cacheLibrary.h .
+<p>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>add the initialisation of this array in the file initcache.c .
+<p>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>add the simulation of the caches in the file SimL1.c .
+<p>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>add the display of the result for this array of caches in the file display.c .
+<p>
+
+
+
+<H1><A NAME="SECTION05"> How to test new skewing functions  </A></H1>
+Feel free to test  new skewing functions. Proceed as follows:
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>create a new file containing the mapping function that you wish to test.
+<p>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>add the name of this file in the makefile
+<p>
+<DT><IMG SRC="http://www.irisa.fr/caps/GIF/dot.gif" alt="o" align=top>create a new case in the file initcache.c  
+
+
+
+</BODY>
+</HTML>
+

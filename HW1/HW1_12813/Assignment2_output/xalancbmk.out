@@ -1,0 +1,89 @@
+===============================================
+HW1 analysis results- 
+PART A Results- 
+Number of instructions: 1498891704
+Number of instructions of different types
+Loads: 351232011 which is 23.4328
+Stores: 148018476 which is 9.87519
+NOPs: 29559062 which is 1.97206
+Direct calls: 9954913 which is 0.664152
+Indirect calls: 8903082 which is 0.593978
+Returns: 18847785 which is 1.25745
+Unconditional branches: 6511900 which is 0.434448
+Conditional branches: 202163922 which is 13.4876
+Logical operations: 30744670 which is 2.05116
+Rotate and shift: 4277125 which is 0.285353
+Flag operations: 1265456 which is 0.0844261
+Vector instructions: 0 which is 0
+Conditional moves: 0 which is 0
+MMX and SSE instructions: 0 which is 0
+System calls: 0 which is 0
+Floating-point: 5529157 which is 0.368883
+The rest: 681884145 which is 45.4926
+===============================================
+PART B Results- 
+CPI: 27.3133
+===============================================
+Part C Results- 
+Memory Footprint: 288036*128 bytes. 
+Instruction Footprint: 953*128 bytes. 
+===============================================
+Part D Results- 
+I) Distribution of Instruction Lengths: 
+1 bytes instructions are 141635822 in number.
+2 bytes instructions are 347606938 in number.
+3 bytes instructions are 441520004 in number.
+4 bytes instructions are 25296517 in number.
+5 bytes instructions are 19028200 in number.
+6 bytes instructions are 18775998 in number.
+7 bytes instructions are 5852560 in number.
+8 bytes instructions are 194015 in number.
+9 bytes instructions are 43257 in number.
+10 bytes instructions are 46689 in number.
+
+II) Distribution of number of operands in an instruction: 
+0 operands instructions are 29559062 in number.
+1 operands instructions are 569791 in number.
+2 operands instructions are 394857913 in number.
+3 operands instructions are 448723402 in number.
+4 operands instructions are 82966852 in number.
+5 operands instructions are 20327125 in number.
+6 operands instructions are 22995855 in number.
+
+III) Distribution of the number of register read operands in an instruction: 
+0 register reads instructions are 35109150 in number.
+1 register reads instructions are 251999141 in number.
+2 register reads instructions are 430684173 in number.
+3 register reads instructions are 248433678 in number.
+4 register reads instructions are 1962682 in number.
+5 register reads instructions are 8815321 in number.
+6 register reads instructions are 22995855 in number.
+
+IV) Distribution of the number of register write operands in an instruction: 
+0 register writes instructions are 102207296 in number.
+1 register writes instructions are 698662355 in number.
+2 register writes instructions are 176045060 in number.
+3 register writes instructions are 23085289 in number.
+
+V) Distribution of the number of memory operands in an instruction: 
+0 memory operators instructions are 534279946 in number.
+1 memory operators instructions are 431472055 in number.
+2 memory operators instructions are 33889216 in number.
+
+VI) Distribution of the number of memory read operands in an instruction: 
+0 memory read operators instructions are 648409206 in number.
+1 memory read operators instructions are 351232011 in number.
+
+VII) Distribution of the number of memory write operands in an instruction: 
+0 memory write operators instructions are 851622741 in number.
+1 memory write operators instructions are 148018476 in number.
+
+VIII) Maximum and Average number of memory bytes touched: 
+Maximum Bytes: 8 Average Bytes: 4.26488
+
+IX) Maximum and Minimum immediate values: 
+Maximum immediate: 2147483647 Minimum immediate: -2147483648
+
+IX) Maximum and Minimum displacement fields: 
+Maximum displacement: 139657912 Minimum displacement: -1392
+===============================================

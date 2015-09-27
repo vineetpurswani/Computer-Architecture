@@ -1,0 +1,44 @@
+<0> Fetched ins 0x3c1d7fff from PC 0x1fc00000
+<1> Decoded ins 0x3c1d7fff btgt: 0xdeadbeef
+<1> Fetched ins 0x37bdae50 from PC 0x1fc00004
+<2> Decoded ins 0x37bdae50 btgt: 0xdeadbeef
+<2> Fetched ins 0x2402049d from PC 0x1fc00008
+<2> Executed ins 0x3c1d7fff
+<3> Fetched ins 0x24040000 from PC 0x1fc0000c
+<3> Executed ins 0x37bdae50
+<3> Memory has nothing to do for ins 0x3c1d7fff
+<3> Decoded ins 0x2402049d btgt: 0xdeadbeef
+<4> Memory has nothing to do for ins 0x37bdae50
+<4> Decoded ins 0x24040000 btgt: 0xdeadbeef
+<4> Writing to reg 29, value: 0xae50 for ins: 0x3c1d7fff
+<4> Fetched ins 0xc from PC 0x1fc00010
+<4> Executed ins 0x2402049d
+<5> Fetched ins 0x24040000 from PC 0x1fc00014
+<5> Executed ins 0x24040000
+<5> Memory has nothing to do for ins 0x2402049d
+<5> Decoded ins 0xc btgt: 0xdeadbeef
+<5> Writing to reg 29, value: 0xae50 for ins: 0x37bdae50
+<6> Decoded ins 0x24040000 btgt: 0xdeadbeef
+<6> Writing to reg 2, value: 0 for ins: 0x2402049d
+<6> Fetched ins 0x24020000 from PC 0x1fc00018
+<6> Deferring execution of syscall ins 0xc
+<6> Memory has nothing to do for ins 0x24040000
+<7> Executed ins 0x24040000
+<7> Memory has nothing to do for ins 0xc
+<7> Decoded ins 0x24020000 btgt: 0xdeadbeef
+<7> Writing to reg 4, value: 0 for ins: 0x24040000
+<7> Fetched ins 0x3c010040 from PC 0x1fc0001c
+<8> SYSCALL! Trapping to emulation layer at PC 0x1fc00020
+<8> Fetched ins 0x34210fa0 from PC 0x1fc00020
+<8> Executed ins 0x24020000
+<8> Memory has nothing to do for ins 0x24040000
+<8> Decoded ins 0x3c010040 btgt: 0xdeadbeef
+<9> Memory has nothing to do for ins 0x24020000
+<9> Decoded ins 0x34210fa0 btgt: 0xdeadbeef
+<9> Writing to reg 4, value: 0 for ins: 0x24040000
+<9> Fetched ins 0x20f809 from PC 0x1fc00024
+<9> Executed ins 0x3c010040
+<10> Fetched ins 0 from PC 0x1fc00028
+<10> Executed ins 0x34210fa0
+<10> Memory has nothing to do for ins 0x3c010040
+<10> Decoded ins 0x20f809 btgt: 0
